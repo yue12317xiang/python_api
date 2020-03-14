@@ -21,6 +21,7 @@ class Do_Excel:
                     else:
                         set_data["data"] = sheet.cell(i,3).value
                     set_data["method"] = sheet.cell(i,4).value
+                    # set_data["method"] = sheet.cell(i,4).value
                     set_data["title"] = sheet.cell(i,5).value
                     set_data["code"] = sheet.cell(i,6).value
                     # set_data["code"] = sheet.cell(i,6).value
@@ -66,5 +67,9 @@ class Do_Excel:
 
 if __name__ == '__main__':
     res = Do_Excel().get_data("data.xlsx")
+    # res = Do_Excel().get_data("data.xlsx")
+    # res = Do_Excel().get_data("data.xlsx")
+    # res = Do_Excel().get_data("data.xlsx")
+    # res = Do_Excel().get_data("data.xlsx")
     print(res)
             
