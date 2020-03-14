@@ -1,3 +1,5 @@
 def funcname(parameter_list):
     print(parameter_list)
-funcname(123)
+def add(num1,num2):
+    return num1+num2
+funcname(add(1,2))
