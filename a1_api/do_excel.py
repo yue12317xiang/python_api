@@ -23,6 +23,7 @@ class Do_Excel:
                     set_data["method"] = sheet.cell(i,4).value
                     set_data["title"] = sheet.cell(i,5).value
                     set_data["code"] = sheet.cell(i,6).value
+                    # set_data["code"] = sheet.cell(i,6).value
                     set_data["sheet_name"] = key
                     test_data.append(set_data)
                     self.update_tel(tel+1,file_name,'init')
@@ -41,6 +42,7 @@ class Do_Excel:
                         set_data["data"] = sheet.cell(code_id+1,3).value
                     set_data["method"] = sheet.cell(code_id+1,4).value
                     set_data["title"] = sheet.cell(code_id+1,5).value
+                    # set_data["title"] = sheet.cell(code_id+1,5).value
                     set_data["code"] = sheet.cell(code_id+1,6).value
                     set_data["sheet_name"] = key
                     test_data.append(set_data)
@@ -52,6 +54,7 @@ class Do_Excel:
         wb = load_workbook(file_name)
         sheet = wb[sheet_name]
         sheet.cell(i,7).value = test_request
+        # sheet.cell(i,7).value = test_request
         sheet.cell(i,8).value = qiwang
         wb.save(file_name)
     def update_tel(self,tel,filename,sheetname):
